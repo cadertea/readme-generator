@@ -1,6 +1,7 @@
 const fs = require("fs");
 // const axios = require("axios");
 const inquirer = require("inquirer");
+const generatorMarkdown = require('./generateMarkdown')
 
 // array of questions for user
 const questions = [
@@ -36,7 +37,8 @@ const questions = [
                 name: "Usage"
             },
             {
-                type: "input",
+                type: "list",
+                choices:[ "MIT", "ISC", "APACHE 2.0", "GPL 3.0", "BSD 3.0"],
                 message: "What license was used for this README?",
                 name: "License"
             },
@@ -67,7 +69,7 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-    fs.writeToFile("./demo/" + fileName, data , function(err){
+    fs.writeFileSync("./output/" + fileName, data , function(err){
         if(err){
             return console.log(err);
         }
@@ -80,7 +82,7 @@ function init() {
     inquirer.prompt(questions)
     .then(function(data){
         console.log(data)
-        // writeToFile("README.md", generatorMarkdown(data));
+        writeToFile("README.md", generatorMarkdown(data));
     })
 
 }
