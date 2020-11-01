@@ -1,0 +1,18 @@
+{
+  "name": "readme",
+  "version": "1.0.0",
+  "description": "creating a read me generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cadertea"
+  },
+  "author": "Christopher Derteano",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}
