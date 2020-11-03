@@ -1,7 +1,8 @@
 
-# Project titlea
+# Project title read me generator
 
-## Developer https://github.com/a
+## Developer Profile
+[This Link] (https://github.com/cadertea)
 
 ### Table of Contents
 
@@ -20,16 +21,16 @@
 *[Test](#Test)
 
 ## Contact 
-a
+cadertea@ncsu.edu
 
 ## Description 
-a
+It is a dynamics read me generator created using Node.js
 
 ## Installation 
-a
+none
 
 ## Usage 
-a
+to create a good read me file for your projects
 
 ## License 
 MIT 
@@ -37,8 +38,8 @@ MIT
 
 
 ## Contributor 
-a
+none
 
 ## Test
- a
+ none
   

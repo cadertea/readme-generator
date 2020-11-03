@@ -54,18 +54,6 @@ const questions = [
             },
         ];
 
-// inquirer
-//     .prompt(questions).then(response => {
-//         fs.appendFileSync("README.md", ("#" + response.title) + '\n', function (err) {
-//             if (err) {
-//                 return console.log(err);
-//             }
-//             console.log("success")
-//         })
-//     })
-
-
-
 
 // function to write README file
 function writeToFile(fileName, data) {

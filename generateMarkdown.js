@@ -3,7 +3,8 @@ function generateMarkdown(data) {
     return `
 # Project title ${data.Title}
 
-## Developer https://github.com/${data.username}
+## Developer Profile
+[This Link] (https://github.com/${data.username})
 
 ### Table of Contents
 
